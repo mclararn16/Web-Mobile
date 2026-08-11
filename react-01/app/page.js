@@ -1,69 +1,33 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Home Page"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
+        <section className={styles.hero}>
+          <p className={styles.eyebrow}>Fofocas • Lifestyle • computação</p>
           <h1>
-            Clary's 
-
-            <code className={styles.code}>App</code>
+            Clary&apos;s <span>App</span>
           </h1>
-          <p>
-            
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              
-            </a>{" "}
-            
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-             
-            </a>{" "}
-            
+          <p className={styles.description}>
+            Um site para entreter, informar e inspirar.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Adicione um comentário
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+          <div className={styles.actions}>
+            <a className={styles.primary} href="#descubra">
+              Descubra mais
+            </a>
+            <a className={styles.secondary} href="#contato">
+              Fale com  Clary
+            </a>
+          </div>
+
+          <ul className={styles.highlights}>
+            <li>Documentação</li>
+            <li>Novidades</li>
+            <li>Posts</li>
+          </ul>
+        </section>
       </main>
     </div>
   );
