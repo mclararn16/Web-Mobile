@@ -4,17 +4,18 @@ import { useState } from "react";
 import styles from "./page.module.css";
 
 const products = [
-  { name: "Jaqueta Marcela", category: "Nylon", price: "R$ 389,90", tone: "Areia", image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=900&auto=format&fit=crop" },
-  { name: "Tricot Nina", category: "Malhas", price: "R$ 119,90", tone: "verde musgo", image: "https://img.lojasrenner.com.br/item/930128588/original/3.jpg" },
-  { name: "Camisa Clara", category: "Essenciais", price: "R$ 79,90", tone: "marrom", image: "https://img.lojasrenner.com.br/item/931281437/original/13.jpg" },
-  { name: "Calça reta", category: "Jeans", price: "R$ 269,90", tone: "Chumbo", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzpkBDwUmkzsDIsWkzAM19TEJY7tINbJ_eWLnLXoRTziMrI39RH6vVaFBD8wxchVQzUwoP2U9nfIyoO_NibMrNYx8l9WpUHFIkRfP6VU4WIk_pOk8UqP4mLw" },
-  { name: "Sandália Lia", category: "Calçados", price: "R$ 189,90", tone: "marrom", image: "https://img.lojasrenner.com.br/item/931203914/original/3.jpg" },
+  { name: "Jaqueta Marcela", description: "Jaqueta de couro ( imagem Renner)", category: "Terceira peça", price: "R$ 389,90", tone: "Areia", image: "https://img.lojasrenner.com.br/item/931145304/original/3.jpg" },
+  { name: "Tricot Nina", description: "Tricot de algodão (imagem Renner)", category: "Malhas", price: "R$ 119,90", tone: "verde musgo", image: "https://img.lojasrenner.com.br/item/930128588/original/3.jpg" },
+  { name: "Camisa Clara", description: "Camisa de algodão (imagem Renner)", category: "Essenciais", price: "R$ 79,90", tone: "marrom", image: "https://img.lojasrenner.com.br/item/931281437/original/13.jpg" },
+  { name: "Calça reta", description: "Calça de jeans (imagem Renner)", category: "Jeans", price: "R$ 269,90", tone: "Chumbo", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzpkBDwUmkzsDIsWkzAM19TEJY7tINbJ_eWLnLXoRTziMrI39RH6vVaFBD8wxchVQzUwoP2U9nfIyoO_NibMrNYx8l9WpUHFIkRfP6VU4WIk_pOk8UqP4mLw" },
+  { name: "Sandália Lia", description: "Sandália de couro (imagem Renner)", category: "Calçados", price: "R$ 189,90", tone: "marrom", image: "https://img.lojasrenner.com.br/item/931203914/original/3.jpg" },
+  { name: "Conjunto Gabi", description: "Conjunto de academia (imagem Renner)", category: "Gym", price: "R$ 289,90", tone: "preto", image: "https://img.lojasrenner.com.br/item/930928729/original/4.jpg" },
 ];
 
 export default function Home() {
   const [loginOpen, setLoginOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Tudo");
-  const categories = ["Tudo", "Novidades", "Nylon", "Essenciais", "Malhas", "Jeans", "Calçados"];
+  const categories = ["Tudo", "Novidades", "Terceira peça", "Essenciais", "Malhas", "Jeans", "Calçados"];
   const visibleProducts = activeCategory === "Tudo" || activeCategory === "Novidades"
     ? products
     : products.filter((product) => product.category === activeCategory);
