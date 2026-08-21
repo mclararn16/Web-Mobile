@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Clary's App",
-  description: "Site rosa choque com visual moderno e vibrante",
+  title: "Clary/Studio | Peças essenciais",
+  description: "Moda essencial para a vida real.",
 };
 
 export default function RootLayout({ children }) {
