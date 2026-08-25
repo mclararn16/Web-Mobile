@@ -9,7 +9,7 @@ export default function Exercicio231() {
           margin: "0 auto",
         }}
       >
-        Div vermelha (padding 0)
+        Div vermelha 
       </div>
       <div
         style={{
@@ -20,9 +20,12 @@ export default function Exercicio231() {
           boxSizing: "border-box",
         }}
       >
-        Div verde (padding 25px)
+        Div verde 
       </div>
-      <p style={{ textAlign: "center", maxWidth: "700px", margin: "20px auto" }}>
+      <p style={{ 
+        textAlign: "center", 
+        maxWidth: "700px", 
+        margin: "20px auto" }}>
       </p>
     </div>
   );
