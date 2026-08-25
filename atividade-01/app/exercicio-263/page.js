@@ -8,39 +8,44 @@ export default function Exercicio263() {
     {
       nome: "Sandália Verão",
       preco: "R$ 89,90",
-      imagem: "https://picsum.photos/id/22/150/150",
+      imagem: "https://img.lojasrenner.com.br/item/931203914/original/5.jpg",
     },
     {
       nome: "Bota Urbana",
       preco: "R$ 259,90",
-      imagem: "https://picsum.photos/id/23/150/150",
+      imagem: "https://img.lojasrenner.com.br/item/931018891/original/5.jpg",
     },
     {
-      nome: "Chinelo Slide",
+      nome: "Chinelo Havaianas",
       preco: "R$ 49,90",
-      imagem: "https://picsum.photos/id/24/150/150",
+      imagem: "https://img.lojasrenner.com.br/item/929878761/original/1.jpg",
     },
     {
-      nome: "Sapatênis Clássico",
+      nome: "Sapatilha Social",
       preco: "R$ 179,90",
-      imagem: "https://picsum.photos/id/25/150/150",
+      imagem: "https://img.lojasrenner.com.br/item/931056301/original/5.jpg",
+    },
+    {
+      nome: "Sapatilha colorida",
+      preco: "R$ 179,90",
+      imagem: "https://img.lojasrenner.com.br/item/931429235/original/5.jpg",
     },
   ];
 
   return (
     <div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", padding: "20px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "25px", padding: "35px" }}>
         {produtos.map((p) => (
           <div
             key={p.nome}
             style={{
               backgroundColor: "#b8c99d",
               color: "#595151",
-              padding: "15px",
+              padding: "14px",
               width: "180px",
               textAlign: "center",
               border: "2px solid #fff5d6 ",
-              borderRadius: "12px",
+              borderRadius: "20px",
             }}
           >
             <img
