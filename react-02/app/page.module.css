@@ -1,0 +1,36 @@
+.container {
+
+  font-family: Georgia, serif;
+
+  padding: 24px;
+
+}
+
+.item {
+
+  color: green;
+
+}
+
+.destaque {
+
+  color: purple;
+
+  font-weight: bold;
+
+}
+
+.botao {
+
+  padding: 8px 16px;
+
+  cursor: pointer;
+
+}
+
+.negrito {
+
+  font-weight: bold;
+
+}
+ 
